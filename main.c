@@ -56,16 +56,16 @@ void getMove(char input, int *dx, int *dy)
     switch (input)
     {
     case 'w':
-        (*dx)--; // Mengurangi nilai y (bergerak ke atas)
+        (*dx)--;
         break;
     case 's':
-        (*dx)++; // Menambah nilai y (bergerak ke bawah)
+        (*dx)++;
         break;
     case 'a':
-        (*dy)--; // Mengurangi nilai x (bergerak ke kiri)
+        (*dy)--;
         break;
     case 'd':
-        (*dy)++; // Menambah nilai x (bergerak ke kanan)
+        (*dy)++;
         break;
     default:
         printf("Input tidak valid. Gunakan w/a/s/d untuk bergerak.\n");
