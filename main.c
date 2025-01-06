@@ -49,24 +49,23 @@ void updatePosition(char player, int old_x, int old_y, int new_x, int new_y)
     board[new_x][new_y] = player; // Tempatkan pemain di posisi baru
 }
 
-// Dapatkan pergeseran langkah berdasarkan input menggunakan switch-case
+// Dapatkan pergeseran langkah berdasarkan input dengan increment
 void getMove(char input, int *dx, int *dy)
 {
-    *dx = 0;
-    *dy = 0;
+    // Menggunakan switch-case untuk mengincrement nilai dx dan dy
     switch (input)
     {
     case 'w':
-        *dx = -1;
+        (*dx)--; // Mengurangi nilai y (bergerak ke atas)
         break;
     case 's':
-        *dx = 1;
+        (*dx)++; // Menambah nilai y (bergerak ke bawah)
         break;
     case 'a':
-        *dy = -1;
+        (*dy)--; // Mengurangi nilai x (bergerak ke kiri)
         break;
     case 'd':
-        *dy = 1;
+        (*dy)++; // Menambah nilai x (bergerak ke kanan)
         break;
     default:
         printf("Input tidak valid. Gunakan w/a/s/d untuk bergerak.\n");
