@@ -1,6 +1,8 @@
-Berikut adalah penjelasan dari setiap fungsi utama dalam program ** Nulungan Game**:
+Berikut adalah penjelasan dari setiap fungsi utama dalam
 
-# 1. Fungsi Display dan Inisialisasi
+## program Nulungan Game
+
+## 1. Fungsi Display dan Inisialisasi
 
 ---
 
