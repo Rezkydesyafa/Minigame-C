@@ -11,8 +11,6 @@ Berikut adalah penjelasan dari setiap fungsi utama dalam program ** Nulungan Gam
   - **Header utama permainan**: Memberikan informasi nama permainan.
   - **Instruksi permainan**: Memberikan penjelasan singkat tentang tujuan permainan dan elemen-elemen yang akan ditemukan di papan, seperti perawat (`*`), pasien (`#`), dan rintangan (`X`).
 
----
-
 ## 1.2 `printBoardWithFrame()`
 
 - Fungsi untuk menampilkan papan permainan ke layar dengan bingkai.
@@ -27,8 +25,6 @@ Berikut adalah penjelasan dari setiap fungsi utama dalam program ** Nulungan Gam
       - Ruang kosong (`-`): **Default**.
     - Setiap baris dibingkai dengan tanda "|".
 
----
-
 ## 1.3 `initializeBoard()`
 
 - Fungsi untuk menginisialisasi papan permainan dengan kondisi awal.
@@ -36,8 +32,6 @@ Berikut adalah penjelasan dari setiap fungsi utama dalam program ** Nulungan Gam
   - **Mengisi papan dengan simbol `-`**: Menandakan posisi kosong.
   - **Menempatkan perawat (`*`) di posisi awal**: `(0, 0)`.
   - **Menempatkan pasien (`#`) di posisi awal**: `(5, 5)`.
-
----
 
 ## 2. Fungsi Logika Permainan
 
@@ -52,8 +46,6 @@ Berikut adalah penjelasan dari setiap fungsi utama dalam program ** Nulungan Gam
 - **Logika**:
   - Memastikan nilai `x` dan `y` berada dalam rentang valid: `0 <= x < ROWS` dan `0 <= y < COLS`.
 
----
-
 ### 2.2 `updatePosition(old_x, old_y, new_x, new_y)`
 
 - Fungsi untuk memperbarui posisi perawat di papan.
@@ -64,23 +56,19 @@ Berikut adalah penjelasan dari setiap fungsi utama dalam program ** Nulungan Gam
   - Mengosongkan posisi lama (`board[old_x][old_y] = '-'`).
   - Menandai posisi baru dengan simbol perawat (`board[new_x][new_y] = '*'`).
 
----
-
 ## 2.3 `getMove(input, dx, dy)`
 
 - Fungsi untuk menginterpretasikan input pemain menjadi pergeseran posisi.
-- **Parameter**:
+  1. Parameter:
   - `input`: Input arah dari pemain (`w`, `a`, `s`, `d`).
   - `dx`, `dy`: Variabel pointer untuk menyimpan pergeseran koordinat.
-- **Logika**:
+  2. Logika:
   - Berdasarkan input:
     - `w`: Mengurangi baris (`dx--` → bergerak ke atas).
     - `s`: Menambah baris (`dx++` → bergerak ke bawah).
     - `a`: Mengurangi kolom (`dy--` → bergerak ke kiri).
     - `d`: Menambah kolom (`dy++` → bergerak ke kanan).
   - Input yang tidak valid akan menampilkan pesan peringatan.
-
----
 
 ## 2.4 `spawnNewPatient()`
 
@@ -90,19 +78,15 @@ Berikut adalah penjelasan dari setiap fungsi utama dalam program ** Nulungan Gam
   - Memastikan posisi baru kosong (`board[new_x][new_y] == '-'`).
   - Menempatkan pasien (`board[new_x][new_y] = '#'`) dan memperbarui posisi pasien global (`patient_x`, `patient_y`).
 
----
-
 ## 2.5 `generateChallenge()`
 
 - Fungsi untuk membuat tantangan acak dalam permainan.
-- **Jenis Tantangan**:
+  1. Jenis Tantangan:
   - **Tantangan Rintangan**: Menambahkan simbol `X` (rintangan) di posisi kosong pada papan.
   - **Tantangan Cepat**: Memaksa pemain menyelesaikan dalam jumlah langkah terbatas (misalnya 5 langkah).
   - **Tantangan Papan Tersembunyi**: Menyembunyikan tampilan papan selama beberapa langkah.
-- **Pemilihan Tantangan**:
+  2. Pemilihan Tantangan:
   - Menggunakan `rand() % 3` untuk memilih salah satu dari tiga jenis tantangan secara acak.
-
----
 
 ## 2.6 `resetChallenge()`
 
@@ -110,8 +94,6 @@ Berikut adalah penjelasan dari setiap fungsi utama dalam program ** Nulungan Gam
 - **Logika**:
   - Mengatur `hide_board = false` (jika papan disembunyikan).
   - Mengatur ulang `challenges_remaining` ke nilai awal (3).
-
----
 
 ## 2.7 `increaseLevel()`
 
@@ -121,8 +103,6 @@ Berikut adalah penjelasan dari setiap fungsi utama dalam program ** Nulungan Gam
   - Jika ukuran papan belum mencapai maksimum (10x10), meningkatkan ukuran papan (`ROWS++`, `COLS++`).
   - Memulai ulang papan dengan ukuran baru menggunakan `initializeBoard()`.
   - Membuat tantangan baru untuk level berikutnya.
-
----
 
 ## 3. Fungsi File I/O
 
@@ -141,8 +121,6 @@ Berikut adalah penjelasan dari setiap fungsi utama dalam program ** Nulungan Gam
   - Membuka file dalam mode tulis (`"w"`).
   - Menyimpan semua data dalam format yang bisa dibaca ulang.
 
----
-
 ## 3.2 `loadGame(filename)`
 
 - Fungsi untuk memuat status permainan dari file.
@@ -150,8 +128,6 @@ Berikut adalah penjelasan dari setiap fungsi utama dalam program ** Nulungan Gam
   - Membuka file dalam mode baca (`"r"`).
   - Membaca data dari file (ukuran papan, posisi, dll.).
   - Mengembalikan permainan ke kondisi yang tersimpan.
-
----
 
 ## 4. Fungsi Musik
 
@@ -161,13 +137,9 @@ Berikut adalah penjelasan dari setiap fungsi utama dalam program ** Nulungan Gam
 
 - Fungsi untuk memutar musik latar.
 - **Logika**:
-  - Menggunakan fungsi `PlaySound` untuk memainkan file musik (`.wav`) secara asinkron.
-
----
+- Menggunakan fungsi `PlaySound` untuk memainkan file musik (`.wav`) secara asinkron.
 
 ## 5. Main Program
-
----
 
 ## Alur Program Utama:
 
