@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <time.h>
+#include <windows.h>
+#include <mmsystem.h>
+#pragma comment(lib, "winmm.lib")
 
 // initialize
 char board[10][10];
@@ -95,6 +98,8 @@ void updatePosition(int old_x, int old_y, int new_x, int new_y)
 // Dapatkan pergeseran langkah berdasarkan input dengan increment
 void getMove(char input, int *dx, int *dy)
 {
+    printf("\a");
+    Beep(500, 200);
     switch (input)
     {
     case 'w':
@@ -245,12 +250,20 @@ void loadGame(const char *filename)
     printf(GREEN "Permainan berhasil dimuat dari file %s.\n" RESET, filename);
 }
 
+// Fungsi untuk memutar musik
+void playMusic(const char *filename)
+{
+    PlaySound(filename, NULL, SND_FILENAME | SND_ASYNC);
+}
 // Main program
 int main()
 {
     srand(time(NULL));
 
+    playMusic("D:\\Pemrograman\\Minigame-C\\src\\music.wav");
+
     displayHeader();
+
     printf(MAGENTA "Apakah kamu ingin memuat Game? (y/n): " RESET);
     char load_input;
     scanf(" %c", &load_input);
