@@ -1,8 +1,8 @@
-﻿# Minigame-C
+﻿# Minigame-C-Nulungan
 
 ## Deskripsi
 
-Medical Mini Game adalah permainan berbasis konsol di mana pemain membantu seorang perawat (\*) mencapai pasien (#) di papan permainan sambil menghindari rintangan (X). Permainan dirancang untuk mengasah kemampuan navigasi pemain dengan menghadirkan tantangan yang semakin meningkat di setiap level.
+Medical Nulungan Game adalah permainan berbasis konsol, kata nulungan diambil dari bahasa sunda artinya ```menolong``` yang artinya di mana pemain membantu seorang perawat (\*) mencapai pasien (#) di papan permainan sambil menghindari rintangan (X). Permainan dirancang untuk mengasah kemampuan navigasi pemain dengan menghadirkan tantangan yang semakin meningkat di setiap level.
 
 ## Cara Menggunakan
 
