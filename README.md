@@ -36,13 +36,13 @@ gcc -o medical_game medical_game.c -lwinmm
 
 ## Tantangan:
 
-    Rintangan acak memenuhi papan.
-    Peta papan disembunyikan.
-    Waktu terbatas untuk menyelesaikan langkah tertentu.
+   Rintangan acak memenuhi papan.
+   Peta papan disembunyikan.
+   Waktu terbatas untuk menyelesaikan langkah tertentu.
 
 ## Leveling:
 
-    Setelah membantu pasien dalam jumlah tertentu, level permainan akan meningkat, ukuran papan bertambah, dan tantangan baru akan muncul.
+   Setelah membantu pasien dalam jumlah tertentu, level permainan akan meningkat, ukuran papan bertambah, dan tantangan baru akan muncul.
 
 ## Fitur Utama
 
@@ -57,4 +57,5 @@ gcc -o medical_game medical_game.c -lwinmm
 
 ## Dokumetasi Code
    code_doc.md
+https://github.com/Rezkydesyafa/Minigame-C/blob/main/code_doc.md
 ./code_doc.md
