@@ -1,4 +1,6 @@
 ﻿# Minigame-C-Nulungan
+ ![image](https://github.com/user-attachments/assets/56c59fcd-432b-4a04-976d-1749d385b2b6)
+
 
 ## Deskripsi
 
