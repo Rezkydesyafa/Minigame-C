@@ -24,9 +24,9 @@ bool hide_board = false;
 void displayHeader()
 {
     printf(GREEN "========================================\n" RESET);
-    printf(GREEN "            MEDICAL MINI GAME           \n" RESET);
+    printf(GREEN "        MEDICAL NULUNGAN GAME           \n" RESET);
     printf(GREEN "========================================\n" RESET);
-    printf(GREEN "Selamat datang di Medical Mini Game!\n" RESET);
+    printf(GREEN "Selamat datang di Nulungan Game!\n" RESET);
     printf(YELLOW "Bantu perawat (*) mencapai pasien (#) sambil menghindari rintangan (X).\n" RESET);
     printf(GREEN "========================================\n" RESET);
 }
