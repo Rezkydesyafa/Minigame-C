@@ -1,17 +1,17 @@
 ﻿# Minigame-C-Nulungan
- ![image](https://github.com/user-attachments/assets/56c59fcd-432b-4a04-976d-1749d385b2b6)
 
+![image](https://github.com/user-attachments/assets/56c59fcd-432b-4a04-976d-1749d385b2b6)
 
 ## Deskripsi
 
-Medical Nulungan Game adalah permainan berbasis konsol, kata nulungan diambil dari bahasa sunda artinya ```menolong``` yang artinya di mana pemain membantu seorang perawat (\*) mencapai pasien (#) di papan permainan sambil menghindari rintangan (X). Permainan dirancang untuk mengasah kemampuan navigasi pemain dengan menghadirkan tantangan yang semakin meningkat di setiap level.
+Medical Nulungan Game adalah permainan berbasis konsol, kata nulungan diambil dari bahasa sunda artinya `menolong` yang artinya di mana pemain membantu seorang perawat (\*) mencapai pasien (#) di papan permainan sambil menghindari rintangan (X). Permainan dirancang untuk mengasah kemampuan navigasi pemain dengan menghadirkan tantangan yang semakin meningkat di setiap level.
 
 ## Cara Menggunakan
 
 1. Kompilasi Program: Gunakan GCC untuk mengkompilasi program. Contoh:
 
 ```
-gcc -o medical_game medical_game.c -lwinmm
+gcc -o nulungan_game main.c -lwinmm
 
 ```
 
@@ -38,13 +38,13 @@ gcc -o medical_game medical_game.c -lwinmm
 
 ## Tantangan:
 
-   Rintangan acak memenuhi papan.
-   Peta papan disembunyikan.
-   Waktu terbatas untuk menyelesaikan langkah tertentu.
+Rintangan acak memenuhi papan.
+Peta papan disembunyikan.
+Waktu terbatas untuk menyelesaikan langkah tertentu.
 
 ## Leveling:
 
-   Setelah membantu pasien dalam jumlah tertentu, level permainan akan meningkat, ukuran papan bertambah, dan tantangan baru akan muncul.
+Setelah membantu pasien dalam jumlah tertentu, level permainan akan meningkat, ukuran papan bertambah, dan tantangan baru akan muncul.
 
 ## Fitur Utama
 
@@ -58,6 +58,7 @@ gcc -o medical_game medical_game.c -lwinmm
 8. Suara Beep dan Music
 
 ## Dokumetasi Code
-   code_doc.md
+
+code_doc.md
 https://github.com/Rezkydesyafa/Minigame-C/blob/main/code_doc.md
 ./code_doc.md

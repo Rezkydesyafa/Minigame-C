@@ -30,6 +30,19 @@ void displayHeader()
     printf(YELLOW "Bantu perawat (*) mencapai pasien (#) sambil menghindari rintangan (X).\n" RESET);
     printf(GREEN "========================================\n" RESET);
 }
+// void displayExit(char input)
+// {
+//     printf(GREEN "========================================\n" RESET);
+//     printf(GREEN "        MEDICAL NULUNGAN GAME           \n" RESET);
+//     printf(GREEN "========================================\n" RESET);
+//     printf(GREEN "Selamat anda berhasil menamatkan game!\n" RESET);
+//     printf(GREEN "Tekan q untuk kembali keluar...\n" RESET);
+//     printf(GREEN "========================================\n" RESET);
+//     if (input == 'q')
+//     {
+//         exit(0);
+//     }
+// }
 
 // Fungsi untuk menampilkan bingkai papan
 void printBoardWithFrame()
@@ -285,6 +298,7 @@ int main()
 
     while (1)
     {
+
         if (!hide_board)
             printBoardWithFrame();
 
@@ -343,11 +357,10 @@ int main()
             {
                 increaseLevel();
             }
-
             if (level > 5)
             {
                 printf(GREEN "Selamat, kamu telah menyelesaikan permainan!\n" RESET);
-                break;
+                // displayExit(input);
             }
         }
         else
