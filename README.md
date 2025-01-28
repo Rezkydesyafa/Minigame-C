@@ -1,4 +1,9 @@
 ﻿# Minigame-C-Nulungan
+<<<<<<< HEAD
+=======
+![image](https://github.com/user-attachments/assets/9a7ab3be-97d2-47ed-9c31-edae9bd5427b)
+
+>>>>>>> 2103e303314868809cfac251f3a024d0235357ac
 
 ![image](https://github.com/user-attachments/assets/56c59fcd-432b-4a04-976d-1749d385b2b6)
 
